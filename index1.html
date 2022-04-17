@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<style>
+       body {
+    background-image: url("https://wallpaperbat.com/img/741484-teacher-wallpaper-blackboard-table-room-furniture-still-life-photography.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+ </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Price-Prediction</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<h1 style="text-align:center;"><b><i style="color:orange;"><strong>PUBG PLAYER PERFORMANCE</i></h1>
+ <h4 style="text-align:center;"><b><i style="color:Tomato"><strong><span style='font-size:20px;'>&#129351;</span> - Bad <br><span style='font-size:20px;'>&#129352;</span> - Medium <br><span style='font-size:20px;'>&#129353;</span>  - Goods </h4></i>
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="body_form">
+                <div class="left_side">
+                    <h2>Enter the Player Id</h2><input id="Id" name="Id" required="required">
+                    <br><br>
+                    <h2>Enter the Assist Points</h2><input id="assists" name="assists" required="required">
+                    <br><br>
+                    <h2>Enter the Boost Points</h2><input id="boosts" name="boosts" required="required">
+                    <br><br>
+                    <h2>Enter the Damage Dealt By the PLayer</h2><input id="damageDealt" name="damageDealt" required="required">
+                    <br><br>
+                    <h2>Enter DBNOs</h2><input id="DBNOs" name="DBNOs" required="required">
+                    <br><br>
+                    <h2>Enter the Headshot Kill Points</h2><input id="headshotKills" name="DBNOs" required="required">
+                    <br><br>
+                    <h2>Enter the Heal Points</h2><input id="heals" name="heals" required="required">
+
+                </div>
+                <div class="right_side">
+                <br><br><br>
+                    <h2>Select the Match Type</h2><select name="matchType" id="matchType" required="required">
+                        <option value="crashtpp">Crash-tpp</option>
+                        <option value="duo">Duo</option>
+                        <option value="duo-fpp">Duo-Fpp</option>
+                        <option value="flarefpp">Flare-Fpp</option>
+                        <option value="flaretpp">Flare-Tpp</option>
+                        <option value="normal-duo">Normal-Duo</option>
+                        <option value="normal-duo-fpp">Normal-Duo-Fpp</option>
+                        <option value="normal-solo">Normal-Solo</option>
+                        <option value="normal-solo-fpp">Normal-Solo-Fpp</option>
+                        <option value="normal-squad">Normal-Squad</option>
+                        <option value="normal-squad-fpp">Normal-Squad-Fpp</option>
+                        <option value="solo">Solo</option>
+                        <option value="solo-fpp">Solo-Fpp</option>
+                        <option value="squad">Squad</option>
+                        <option value="squad-fpp">Squad-Fpp</option>
+
+                <div class="container">
+                <div class="text-center">
+                    <br><br>
+                    <p></p><button id="sub"<style="color:orange;" type="submit ">SUBMIT</button></div>
+        </form>
+<h3>{{ prediction_text}}</h3><p style="text-align:center;"><i style="color:Tomato"; >©Kavya Sathya Nishanth</p>
+
+
+        <style>
+
+            body {
+                text-align: left;
+                padding: 16px 32px;
+                background-color: #ffffff
+            }
+
+            .body_form {
+                display: flex;
+            }
+
+            .left_side {
+                color: royalblack;
+                width: 50%;
+            }
+
+            .right_side {
+                color: royalblack;
+                width: 50%;
+            }
+            h1 {
+                font-weight: 900;
+            }
+
+            h2 {
+                font-weight: 900;
+
+            }
+
+            h4 {
+                font-weoght: 900;
+            }
+
+
+
+            #research {
+                font-size: 18px;
+                width: 100px;
+                height: 23px;
+                top: 23px;
+            }
+
+            #box {
+                border-radius: 50px;
+                border-color: 45px;
+                border-style: solid;
+                font-family: cursive;
+                text-align: center;
+                background-color: rgb(168, 131, 61);
+                font-size: medium;
+                position: absolute;
+                width: 1000px;
+                bottom: 9%;
+                height: 1850px;
+                right: 30%;
+                padding: 0px;
+                margin: 0px;
+                font-size: 14px;
+            }
+
+            #fuel {
+                width: 240px;
+                height: 43px;
+                text-align: center;
+                border-radius: 30px;
+                font-size: 20px;
+            }
+
+            #fuel:hover {
+                background-color: coral;
+            }
+
+            #research {
+                width: 99px;
+                height: 43px;
+                text-align: center;
+                border-radius: 20px;
+                font-size: 18px;
+            }
+
+            #research:hover {
+                background-color: coral;
+            }
+
+            #dropdown {
+                width: 240px;
+                height: 143px;
+                text-align: center;
+                border-radius: 50px;
+                font-size: 40px;
+            }
+
+            #resea:hover {
+                background-color: coral;
+            }
+
+            #sub {
+                height: 60px;
+                width: 240px;
+                margin: 64px 0px;
+                padding: 10px 16px;
+                text-align: center;
+                border-radius: 8px;
+                background-color: black;
+                color: orange;
+                font-size: 18px;
+            }
+
+            #sub:hover {
+                background-color: SlateBlue;
+                cursor:pointer;
+
+            }
+
+            #first {
+                border-radius: 10px;
+                height: 40px;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            #second {
+                border-radius: 15px 50px 30px;;
+                height: 40px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            #third {
+                border-radius: 4px;
+                height: 40px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            #fourth {
+                border-radius: 4px;
+                height: 40px;
+                font-size: 20px;
+                text-align: center;
+            }
+        </style>
+    </body>
+
+    </html>
